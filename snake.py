@@ -3,7 +3,7 @@ import pygame
 import time
 import random
 
-snake_speed = 20
+snake_speed = 10
 
 # Window size
 window_x = 720
@@ -75,7 +75,7 @@ def game_over():
 	# creating a text surface on which text
 	# will be drawn
 	game_over_surface = my_font.render(
-		'Your Score is : ' + str(score), True, red)
+		'Tvoje skore je: ' + str(score), True, white)
 	
 	# create a rectangular object for the text
 	# surface object
