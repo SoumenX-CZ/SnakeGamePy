@@ -43,7 +43,7 @@ fruit_spawn = True
 
 # setting default snake direction towards
 # right
-direction = 'RIGHT'
+direction = 'LEFT'
 change_to = direction
 
 # initial score
@@ -75,7 +75,7 @@ def game_over():
 	# creating a text surface on which text
 	# will be drawn
 	game_over_surface = my_font.render(
-		'Tvoje skore je: ' + str(score), True, white)
+		'Your score is: ' + str(score), True, white)
 	
 	# create a rectangular object for the text
 	# surface object
