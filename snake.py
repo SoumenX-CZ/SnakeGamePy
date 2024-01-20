@@ -33,8 +33,7 @@ snake_position = [100, 50]
 snake_body = [[100, 50],
 			[90, 50],
 			[80, 50],
-			[70, 50]
-			]
+			[70, 50]]
 # fruit position
 fruit_position = [random.randrange(1, (window_x//10)) * 10,
 				random.randrange(1, (window_y//10)) * 10]
@@ -170,7 +169,7 @@ while True:
 			game_over()
 
 	# displaying score countinuously
-	show_score(1, white, 'times new roman', 20)
+	show_score(1, white, 'times new roman', 30)
 
 	# Refresh game screen
 	pygame.display.update()
