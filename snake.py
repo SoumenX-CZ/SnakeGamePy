@@ -1,3 +1,5 @@
+# Basic snake game written in python using pygame pip module
+# Everythings is commented so you can easily understand it
 # importing libraries
 import pygame
 import time
