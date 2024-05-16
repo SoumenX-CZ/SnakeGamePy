@@ -5,13 +5,13 @@ import pygame
 import time
 import random
 
+#asdflwoniap
 snake_speed = 10
 
 # Window size
 window_x = 720
 window_y = 480
 
-# defining colors
 black = pygame.Color(255, 0, 0)
 white = pygame.Color(255, 255, 255)
 red = pygame.Color(255, 0, 0)
@@ -88,17 +88,13 @@ def game_over():
 	# blit will draw the text on screen
 	game_window.blit(game_over_surface, game_over_rect)
 	pygame.display.flip()
-	
-	# after 2 seconds we will quit the program
 	time.sleep(2)
 	
 	# deactivating pygame library
 	pygame.quit()
-	
-	# quit the program
 	quit()
 
-
+#asdlpqownidf
 # Main Function
 while True:
 	
@@ -136,9 +132,7 @@ while True:
 	if direction == 'RIGHT':
 		snake_position[0] += 10
 
-	# Snake body growing mechanism
-	# if fruits and snakes collide then scores
-	# will be incremented by 10
+	
 	snake_body.insert(0, list(snake_position))
 	if snake_position[0] == fruit_position[0] and snake_position[1] == fruit_position[1]:
 		score += 10
@@ -173,8 +167,7 @@ while True:
 	# displaying score countinuously
 	show_score(1, white, 'times new roman', 30)
 
-	# Refresh game screen
 	pygame.display.update()
-
+#asdflwonfidk
 	# Frame Per Second /Refresh Rate
 	fps.tick(snake_speed)
